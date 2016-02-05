@@ -1,1 +1,19 @@
-<%= form_for(@posts) do |p| %>
+<div class="row">
+ <form class="col s12">
+   <div class="row">
+     <div class="input-field col s3">
+       <i class="material-icons prefix">subject</i>
+       <input id="name" type="text" class="validate">
+       <label for="icon_prefix">title</label>
+     </div>
+     <div class="input-field col s6">
+       <i class="material-icons prefix">message</i>
+       <input id="body" type="text" class="validate">
+       <label for="textarea">body</label>
+     </div>
+   </div>
+   <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+ </form>
+</div>
