@@ -5,8 +5,13 @@
       <%= p.label :title %>
       <%= p.text_field :name %>
     </div>
+    <div class="input-field">
+      <i class="material-icons prefix">comment</i>
+      <%= p.label :body %>
+      <%= p.text_area :body %>
+    </div>
     <div class="actions">
-      <%= p.submit %>
+      <%= p.submit "submit", class: "btn btn-default btn-primary" %>
     </div>
   </div>
 <% end %>
