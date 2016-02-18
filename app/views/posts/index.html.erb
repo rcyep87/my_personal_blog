@@ -1,3 +1,6 @@
 <h1 class="postindextitle">See history of all posts</h1>
 
-<%= render partial: "form" %>
+  <% @posts.each do |post| %>
+    <%= post.name %>
+    <%= post.body %>
+  <% end %>

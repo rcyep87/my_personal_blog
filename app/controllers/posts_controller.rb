@@ -6,13 +6,15 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
-    render "posts/index"
   end
 
   def create
     @post = Post.new(post_params)
-    @post.save
-    redirect_to posts_path
+    if @post.save
+      redirect_to posts_path
+    else
+      redirect_to new_post
+    end
   end
 
   private

@@ -20,3 +20,15 @@ $primary-color: color("blue", "lighten-2") !default;
 .postindextitle {
   text-align: center;
 }
+
+.new-post-h1 {
+  text-align: center;
+}
+
+.post-form {
+  padding-top: 50px;
+}
+
+.row .col.s6.post-submit-btn {
+  padding-left: 175px;
+}
